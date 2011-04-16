@@ -94,8 +94,11 @@ sb = new Ext.Application({
                                 '<a href="tel:{phone}">{phone}</a>',
                             '</div>',
                             '<div class="link x-button">',
-                                '<a href="{mobile_url}">Read more</a>',
-                            '</div>'
+                                '<a href="{mobile_url}" target="_blank">Read more</a>',
+                            '</div>',
+							'<div class="link x-button">',
+							  '<a href="#" onclick=\'createContact("{name}","{phone}","{photo_url}")\'>Add To Contacts</a>',
+							'</div>'  
                         ]
                     },
                     {
